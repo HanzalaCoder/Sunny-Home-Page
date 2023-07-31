@@ -6,9 +6,131 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <link rel="stylesheet" href="output.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="bg-blue-700">
-  <h1 class="bg-orange-400">Hello World</h1>
+<body class="box-border font-sans">
+  <section class=" h-[100vh] w-[100vw]  header bg-center bg-no-repeat bg-cover items-center" style="background-image: url(images/mobile/image-header.jpg); @media (min-width: 1024px) {
+    background-image: url(images/desktop/image-header.jpg);
+  }">
+    <div class=" relative flex justify-between px-4 py-8">
+      <img src="images/logo.svg" alt="">
+      <img class="btn md:hidden" src="images/icon-hamburger.svg" alt="">
+    
+    <ul class="w-full hidden  md:flex md:justify-between md:max-w-lg md:items-center text-White font-semibold">
+      <li>About</li>
+      <li>Services</li>
+      <li>Projects</li>
+      <li class="py-2 px-8 bg-White text-VeryDarkBlue rounded-full hover:bg-White/20 hover:text-White">Contact</li>
+    </ul>
+    </div>
+    <ul class="box hidden w-[90%] absolute inset-0 -top-[45vh]  m-auto bg-White flex flex-col h-min py-4 items-center gap-4 text-DarkGrayish font-bold rounded-lg">
+      <li class="hover:bg-Yellow rounded-full px-8 py-2 hover:text-VeryDarkBlue">About</li>
+      <li class="hover:bg-Yellow rounded-full px-8 py-2 hover:text-VeryDarkBlue">Services</li>
+      <li class="hover:bg-Yellow rounded-full px-8 py-2 hover:text-VeryDarkBlue">Projects</li>
+      <li class="hover:bg-Yellow rounded-full px-8 py-2 hover:text-VeryDarkBlue">Contact</li>
+    </ul>
+    <div class="grid place-content-center place-items-center gap-12 ">
+      <h1 class="text-White tracking-[.5rem]   font-bold text-6xl text-center uppercase break-words mt-16 ">We are Creatives</h1>
+      <img class="mt-20" src="images/icon-arrow-down.svg" alt="">
+    </div>
+  </section>
+  <section>
+
+    <div class="flex flex-col lg:flex-row-reverse items-center">
+      <img class="lg:hidden"  src="images/mobile/image-transform.jpg" alt="">
+      <img class="lg:w-[50%] hidden  lg:block" src="images/desktop/image-transform.jpg" alt="">
+      <div class=" lg:w-[50%] flex gap-8 flex-col py-12 text-center items-center px-4">
+        <h2 class=" text-4xl font-bold text-VeryDarkBlue">Transform your brand</h2>
+        <p class="text-DarkGrayish font-semibold w-[50ch]"> We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <button class="uppercase underline decoration-2 decoration-double decoration-Yellow/30">Learn more</button>
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row items-center">
+      <img class="lg:hidden"  src="images/mobile/image-stand-out.jpg" alt="">
+      <img class="lg:w-[50%] hidden  lg:block" src="images/desktop/image-stand-out.jpg" alt="">
+      <div class=" lg:w-[50%] flex gap-8 flex-col py-12  text-center items-center px-4">
+        <h2 class=" text-4xl font-bold text-VeryDarkBlue"> Stand out to the right audience</h2>
+        <p class="text-DarkGrayish font-semibold w-[50ch]"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+        <button class="uppercase underline decoration-2 decoration-double decoration-Softred/30">Learn more</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col lg:flex-row middle">
+    <div class=" lg:w-[50%] bg-no-repeat bg-cover flex flex-col text-center items-center px-4 gap-8" style="background-image: url(images/mobile/image-graphic-design.jpg); @media (min-width: 768px){
+       background-image: url(images/desktop/image-graphic-design.jpg);
+    } ">
+      <h2 class="text-4xl font-bold text-graphictext pt-[100%] capitalize">
+        Graphic design</h2>
+        <p class=" w-[50ch] pb-[10%] text-graphictext font-semibold">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    </div>
+    <div class=" lg:w-[50%] bg-no-repeat bg-cover flex flex-col text-center items-center px-4 gap-8" style="background-image: url(images/mobile/image-photography.jpg); @media (min-width: 768px){
+      background-image: url(images/desktop/image-graphic-design.jpg);}">
+      <h2 class="text-4xl font-bold text-photographyText pt-[100%] capitalize">
+        Photography</h2>
+        <p class=" w-[50ch] pb-[10%] text-photographyText font-bold">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </div>
+  </section>
+
+  <h1 class=" font-bold py-8 text-center text-2xl tracking-widest uppercase text-Grayishblue mb-10">Client testimonials</h1>
+   <section class=" mb-12 grid grid-cols-1 gap-8 lg:w-[80vw] lg:grid-cols-3 mx-auto">
+    <div class="flex text-center flex-col items-center px-10 gap-4">
+      <img class="w-[20%]  rounded-full" src="images/image-emily.jpg" alt="">
+      <p class="text-Verydarkgrayish font-semibold">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+      <h4 class="text-2xl font-semibold text-VeryDarkBlue">Emily R.</h4>
+      <small class="text-Grayishblue font-semibold">Marketing Director</small>
+    </div>
+  
+    <div class="flex text-center flex-col items-center px-10 gap-4">
+      <img class="w-[20%]  rounded-full" src="images/image-thomas.jpg" alt="">
+      <p class="text-Verydarkgrayish font-semibold">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+      <h4 class="text-2xl font-semibold text-VeryDarkBlue">Thomas S.</h4>
+      <small class="text-Grayishblue font-semibold">Chief Operating Officer</small>
+    </div>
+  
+    <div class="flex text-center flex-col items-center px-10 gap-4">
+      <img class="w-[20%]  rounded-full" src="images/image-jennie.jpg" alt="">
+      <p class="text-Verydarkgrayish font-semibold">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+      <h4 class="text-2xl font-semibold text-VeryDarkBlue">Jennie F.</h4>
+      <small class="text-Grayishblue font-semibold">Business owner</small>
+    </div>
+   </section>
+
+   <section class="grid mt-8  grid-cols-2 lg:grid-cols-4">
+    <img class="lg:hidden" src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+    <img class="lg:hidden" src="images/mobile/image-gallery-orange.jpg" alt="">
+    <img class="lg:hidden" src="images/mobile/image-gallery-cone.jpg" alt="">
+    <img class="lg:hidden" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+    <img class="hidden lg:block" src="images/desktop/image-gallery-milkbottles.jpg" alt="">                                                                 
+    <img class="hidden lg:block" src="images/desktop/image-gallery-orange.jpg" alt="">                                                                 
+    <img class="hidden lg:block" src="images/desktop/image-gallery-cone.jpg" alt="">                                                                 
+    <img class="hidden lg:block" src="images/desktop/image-gallery-sugarcubes.jpg" alt="">                                                                 
+   </section>  
+
+   <section class="bg-DarkCyanF/100 p-8 py-12 flex items-center flex-col gap-12">
+    <h2 class="text-3xl text-graphictext font-bold">sunnyside</h2>
+    <ul class=" w-full flex justify-between max-w-sm text-graphictext font-bold">
+      <li>Home</li>
+      <li>Services</li>
+      <li>Projects</li>
+    </ul>
+
+    <div class="py-8  flex gap-8 bg-none text-White">
+      <img src="images/icon-twitter.svg" alt="">
+      <img src="images/icon-instagram.svg" alt="">
+      <img src="images/icon-facebook.svg" alt="">
+      <img src="images/icon-pinterest.svg" alt="">
+
+    </div>
+   </section>
+  
+
+
+
 <!--   About
   Services
   Projects
