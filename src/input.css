@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    .bg-small {
+      background-image: url("../public/images/mobile/image-header.jpg");
+    }
+    .bg-large {
+      background-image: url("../public/images/desktop/image-header.jpg");
+    }
+    .bg-orange-small {
+        background-image: url("../public/images/mobile/image-photography.jpg");
+    }
+    .bg-orange-large {
+        background-image: url("../public/images/desktop/image-photography.jpg");
+    }
+    .bg-chille-small {
+        background-image: url("../public/images/mobile/image-graphic-design.jpg");
+    }
+    .bg-chilli-large {
+        background-image: url("../public/images/desktop/image-graphic-design.jpg");
+    }
+
+
+  }
