@@ -5,17 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i src/input.css -o public/output.css --watch",
-    "build": "postcss src/input.css -o public/output.css"
+    "build": "tailwindcss -i ./src/input.css -o ./public/output.css"
   },
   "keywords": [],
   "author": "Hanzala Khan",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.4.14",
-    "cssnano": "^6.0.1",
-    "postcss-cli": "^10.1.0"
   }
 }
