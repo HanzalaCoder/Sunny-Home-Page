@@ -9,9 +9,10 @@
   <script src="script.js" defer></script>
 </head>
 <body class="box-border font-sans">
-  <section class=" h-[100vh] w-[100vw] bg-small lg:bg-large   header bg-center bg-no-repeat bg-cover items-center">
+  <section class=" h-[100vh] w-[100vw] bg-[url('./images/mobile/image-header.jpg')]  lg:bg-[url('./images/desktop/image-header.jpg')]   header bg-center bg-no-repeat bg-cover items-center">
     <div class=" relative flex justify-between p-8 lg:px-16">
       <img src="images/logo.svg" alt="">
+  
       <img class="btn md:hidden" src="images/icon-hamburger.svg" alt="">
     
     <ul class="w-full hidden  md:flex md:justify-between md:max-w-lg md:items-center text-White font-semibold">
@@ -46,7 +47,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col lg:flex-row items-center">
+    <div class="flex flex-col lg:flex-row items-center w-full">
       <img class="lg:hidden"  src="images/mobile/image-stand-out.jpg" alt="">
       <img class="lg:w-[50%] hidden  lg:block" src="images/desktop/image-stand-out.jpg" alt="">
       <div class=" lg:w-[50%] flex gap-8 flex-col py-12  text-center items-center px-4">
@@ -59,12 +60,12 @@
   </section>
 
   <section class="flex flex-col lg:flex-row middle">
-    <div class=" lg:w-[50%] bg-no-repeat bg-cover bg-center bg-chille-small lg:bg-chilli-large flex flex-col text-center items-center px-4 gap-8">
+    <div class=" lg:w-[50%] bg-no-repeat bg-cover bg-center bg-[url('./images/mobile/image-graphic-design.jpg')] lg:bg-[url('./images/desktop/image-graphic-design.jpg')] flex flex-col text-center items-center px-4 gap-8">
       <h2 class="text-4xl font-bold text-graphictext pt-[100%] capitalize">
         Graphic design</h2>
         <p class=" w-[50ch] pb-[10%] text-graphictext font-semibold px-4">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
     </div>
-    <div class=" lg:w-[50%] bg-no-repeat bg-cover bg-center bg-orange-small lg:bg-orange-large  flex flex-col text-center items-center px-4 gap-8">
+    <div class=" lg:w-[50%] bg-no-repeat bg-cover bg-center bg-[url('./images/mobile/image-photography.jpg')] lg:bg-[url('./images/desktop/image-photography.jpg')]  flex flex-col text-center items-center px-4 gap-8">
       <h2 class="text-4xl font-bold text-photographyText pt-[100%] capitalize">
         Photography</h2>
         <p class=" w-[50ch] pb-[10%] text-photographyText font-bold px-4">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
